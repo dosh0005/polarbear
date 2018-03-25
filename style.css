@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- centered content --- */
+
+main {
+	background: #33a;
+	color: #fff;
+	padding: 0 5rem;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	justify-content: center;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 600;
+	margin: 1rem;
+}
+h2 {
+	font-size: 1.5rem;
+	font-weight: 100;
+	margin: 0.75rem;
+}
+p {
+	margin: 0.5rem;
+}
+
+/* --- for different screens --- */
+
+@media (min-width: 500px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (min-width: 750px) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1000px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
