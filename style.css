@@ -7,41 +7,72 @@ html {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 	font-size: 12px;
+
+	background: #006;
+	color: #fff;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* --- centered content --- */
-
-main {
-	background: #33a;
-	color: #fff;
-	padding: 0 5rem;
-
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-
-	justify-content: center;
+h1 {
+	font-size: 0.75em;
+	font-weight: 600;
 	text-align: center;
+	padding: 0.5rem;
 }
 
-h1 {
-	font-size: 2em;
-	font-weight: 600;
+header, main {
+	max-width: 30em;
+	margin: 0 auto;
+	background: #337;
+	color: #fff;
+}
+header {
+	margin-top: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+main {
+	margin-top: 0;
+	padding: 1rem 2rem;
+	border-radius: 0 0 1rem 1rem;
+}
+
+#tabs {
+	width: 100%;
+	display: flex;
+	background: #333;
+}
+#tabs a {
+	flex: 1;
+	text-align: center;
+	font-weight: 900;
+	text-decoration: none;
+}
+#tabs a, a:visited {
+	color: #fff;
+}
+#tabs a:hover {
+	color: #00f;
+}
+#tabs a.current {
+	background: #000;
+}
+#tabs a:hover.current {
+	color: #fff;
+}
+
+/* --- content --- */
+
+p {
 	margin: 1rem;
 }
-h2 {
-	font-size: 1.5rem;
-	font-weight: 100;
-	margin: 0.75rem;
+ul {
+	margin: 1rem 2rem;
 }
-p {
-	margin: 0.5rem;
-}
-
 /* --- for different screens --- */
 
 @media (min-width: 500px) {
