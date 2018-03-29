@@ -6,7 +6,7 @@
 html {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 20px;
 
 	background: #006;
 	color: #fff;
@@ -31,38 +31,42 @@ header, main {
 }
 header {
 	margin-top: 1rem;
-	border-radius: 1rem 1rem 0 0;
+	border-radius: 0.5rem 0.5rem 0 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 main {
 	margin-top: 0;
 	padding: 1rem 2rem;
-	border-radius: 0 0 1rem 1rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+    background: #fff;
+    color: #000;
 }
 
 #tabs {
 	width: 100%;
 	display: flex;
-	background: #333;
 }
 #tabs a {
 	flex: 1;
 	text-align: center;
+	border-radius: 0.5rem 0.5rem 0 0;
 	font-weight: 900;
 	text-decoration: none;
+	background: #333;
 }
 #tabs a, a:visited {
 	color: #fff;
 }
 #tabs a:hover {
-	color: #00f;
+	background: #00f;
 }
 #tabs a.current {
-	background: #000;
+	background: #fff;
+    color: #000;
 }
 #tabs a:hover.current {
-	color: #fff;
+	color: #000;
 }
 
 /* --- content --- */
@@ -73,6 +77,7 @@ p {
 ul {
 	margin: 1rem 2rem;
 }
+
 /* --- for different screens --- */
 
 @media (min-width: 500px) {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!--	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src http://dosh0005.edumedia.ca; style-src 'self' 'unsafe-inline'">-->
+
+	<title>AI for Mental Health</title>
+
+<!--	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+	<link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        #chat {
+            height: 50vh;
+            font-size: 0.75rem;
+        }
+        #chat div {
+            width: 100%;
+            display: flex;
+        }
+        .blank {
+            flex: auto;
+        }
+        .bot, .user {
+            background: #ccc;
+            padding: 0.2rem;
+            border-radius: 0.2rem;
+            margin: 0.25rem;
+        }
+        .bot {
+            text-align: left;
+            background: #cec;
+        }
+        .user {
+            text-align: right;
+            background: #ccf;
+        }
+        
+        #form {
+            width: 100%;
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+	<header>
+		<h1>AI for Mental Health</h1>
+		<div id="tabs">
+			<a href="index.html">About</a>
+			<a href="event.html">Event</a>
+			<a href="team.html">Team</a>
+			<a href="demo.html" class="current">Demo</a>
+		</div>
+	</header>
+    <main>
+        <div id="chat"></div>
+        <div id="form">
+            <input type="text" id="textentry"/>
+            <button id="send">send</button>
+        </div>
+    </main>
+	<script src="chat.js"></script>
+</body>
+</html>
