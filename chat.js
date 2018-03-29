@@ -36,14 +36,11 @@ function send_message(event) {
     var input = document.getElementById("textentry");
     var text = input.value;
     add_message("user", text);
-    var headers = new Headers(
-        {
-            'Origin': 'https://dosh0005.edumedia.ca'
-        });
+    // var headers = new Headers({});
     params = {
         method: 'GET',
-        mode: 'cors',
-        headers: headers
+        // mode: 'cors',
+        // headers: headers
     };
     var urlquery = make_url(text);
     console.log ("fetching "+ urlquery);
