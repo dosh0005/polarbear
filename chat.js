@@ -17,18 +17,18 @@ function add_message(from, text) {
     var entity = document.createElement('span');
     entity.className = from;
     entity.textContent = text;
-    
+
     var blank = document.createElement('span');
     blank.className = "blank";
     var row = document.createElement('div');
     if (from == "bot") {
         row.appendChild(entity);
         row.appendChild(blank);
-    } else {        
+    } else {
         row.appendChild(blank);
         row.appendChild(entity);
     }
-    
+
     main.appendChild(row);
 }
 
@@ -38,9 +38,9 @@ function send_message(event) {
     add_message("user", text);
     var headers = new Headers(
         {
-            'Access-Control-Allow-Origin': "*"
+            'Origin': 'https://dosh0005.edumedia.ca'
         });
-    params = { 
+    params = {
         method: 'GET',
         mode: 'cors',
         headers: headers
@@ -62,4 +62,3 @@ function callback3(err) {
 
 var button = document.getElementById("send");
 button.addEventListener("click", send_message);
-
