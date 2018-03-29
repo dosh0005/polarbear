@@ -42,7 +42,7 @@ function send_message(event) {
 //        });
     params = { 
         method: 'GET',
-        mode: 'no-cors',
+        mode: 'cors',
 //        headers: headers
     };
     var urlquery = make_url(text);
