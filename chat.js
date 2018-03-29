@@ -1,8 +1,15 @@
 
 console.log("this is javascript....");
-//var url = "http://dosh0005.edumedia.ca/api/chat/";
-var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
 
+//var url = "https://dosh0005.edumedia.ca/api/chat/";
+//function make_url(){
+//    return url + "?authkey=asdmasdmasdmasdm&query=" + encodeURIComponent(text);
+//}
+
+var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
+function make_url(){
+    return url + "?q=" + encodeURIComponent(text);
+}
 
 var main = document.getElementById('chat');
 
@@ -38,8 +45,7 @@ function send_message(event) {
         mode: 'no-cors',
 //        headers: headers
     };
-//    var urlquery = url + "?authkey=asdmasdmasdmasdm&query=" + encodeURIComponent(text);
-    var urlquery = url + "?q=" + encodeURIComponent(text);
+    var urlquery = make_url(text);
     console.log ("fetching "+ urlquery);
     fetch(urlquery, params).then(callback1).then(callback2).catch(callback3);
 }
