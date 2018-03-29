@@ -1,7 +1,7 @@
 
 console.log("this is javascript....");
 //var url = "http://dosh0005.edumedia.ca/api/chat/";
-var url = "http://dosh0005.edumedia.ca/api_dialogflow/";
+var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
 
 
 var main = document.getElementById('chat');
