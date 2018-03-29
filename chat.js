@@ -7,7 +7,7 @@ console.log("this is javascript....");
 //}
 
 var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
-function make_url(){
+function make_url(text){
     return url + "?q=" + encodeURIComponent(text);
 }
 
@@ -51,11 +51,10 @@ function send_message(event) {
 }
 function callback1(response) {
     console.log("RESP: ", response);
-    return response.json();
-//    return "{}".json();
+    return response.text();
 }
 function callback2(json) {
-    console.log("JSON: ", json);
+    console.log("DATA: ", json);
 }
 function callback3(err) {
     console.log("FETCHERROR: " + err);
@@ -64,4 +63,3 @@ function callback3(err) {
 var button = document.getElementById("send");
 button.addEventListener("click", send_message);
 
-add_message("bot", "how's it going?");
