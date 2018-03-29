@@ -22,6 +22,11 @@ h1 {
 	text-align: center;
 	padding: 0.5rem;
 }
+h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+}
 
 header, main {
 	max-width: 30em;
@@ -53,13 +58,14 @@ main {
 	border-radius: 0.5rem 0.5rem 0 0;
 	font-weight: 900;
 	text-decoration: none;
-	background: #333;
+	background: #ccc;
+    color: #000;
 }
-#tabs a, a:visited {
-	color: #fff;
+#tabs a:visited {
+	color: #000;
 }
 #tabs a:hover {
-	background: #00f;
+	background: #aaf;
 }
 #tabs a.current {
 	background: #fff;
