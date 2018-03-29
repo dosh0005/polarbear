@@ -2,7 +2,7 @@
 console.log("this is javascript....");
 
 var url = "https://dosh0005.edumedia.ca/api/chat/";
-function make_url(){
+function make_url(text){
    return url + "?authkey=asdmasdmasdmasdm&query=" + encodeURIComponent(text);
 }
 
