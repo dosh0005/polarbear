@@ -36,14 +36,14 @@ function send_message(event) {
     var input = document.getElementById("textentry");
     var text = input.value;
     add_message("user", text);
-//    var headers = new Headers(
-//        {
-//            'Access-Control-Allow-Origin': "*"
-//        });
+    var headers = new Headers(
+        {
+            'Access-Control-Allow-Origin': "*"
+        });
     params = { 
         method: 'GET',
         mode: 'cors',
-//        headers: headers
+        headers: headers
     };
     var urlquery = make_url(text);
     console.log ("fetching "+ urlquery);
