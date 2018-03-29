@@ -1,15 +1,15 @@
 
 console.log("this is javascript....");
 
-//var url = "https://dosh0005.edumedia.ca/api/chat/";
-//function make_url(){
-//    return url + "?authkey=asdmasdmasdmasdm&query=" + encodeURIComponent(text);
-//}
-
-var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
-function make_url(text){
-    return url + "?q=" + encodeURIComponent(text);
+var url = "https://dosh0005.edumedia.ca/api/chat/";
+function make_url(){
+   return url + "?authkey=asdmasdmasdmasdm&query=" + encodeURIComponent(text);
 }
+
+// var url = "https://dosh0005.edumedia.ca/api_dialogflow/";
+// function make_url(text){
+//     return url + "?q=" + encodeURIComponent(text);
+// }
 
 var main = document.getElementById('chat');
 
